@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-22T19:02:15Z",
+  "generated_at": "2026-07-22T19:53:01Z",
   "sources": {
     "arena": {
       "updated_at": "2026-07-22",
@@ -13,24 +13,24 @@
     "openrouter": {
       "updated_at": "2026-07-22",
       "ok": true,
-      "via": "litellm-fallback"
+      "via": "openrouter"
     }
   },
   "models": [
     {
       "id": "anthropic/claude-fable-5",
-      "name": "claude-fable-5",
+      "name": "Anthropic: Claude Fable 5",
       "provider": "Anthropic",
       "arena_rating": 1507,
       "arena_rank": 1,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 10.0,
+      "price_output_per_mtok": 50.0,
+      "context_length": 1000000
     },
     {
       "id": "anthropic/claude-opus-4.6",
-      "name": "claude-opus-4.6",
+      "name": "Anthropic: Claude Opus 4.6",
       "provider": "Anthropic",
       "arena_rating": 1498,
       "arena_rank": 4,
@@ -52,7 +52,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.7",
-      "name": "claude-opus-4.7",
+      "name": "Anthropic: Claude Opus 4.7",
       "provider": "Anthropic",
       "arena_rating": 1494,
       "arena_rank": 6,
@@ -74,7 +74,7 @@
     },
     {
       "id": "google/gemini-3.1-pro-preview",
-      "name": "gemini-3.1-pro-preview",
+      "name": "Google: Gemini 3.1 Pro Preview",
       "provider": "Google",
       "arena_rating": 1486,
       "arena_rank": 8,
@@ -96,14 +96,14 @@
     },
     {
       "id": "moonshotai/kimi-k3",
-      "name": "kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
       "provider": "Moonshot AI",
       "arena_rating": 1486,
       "arena_rank": 10,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 3.0,
+      "price_output_per_mtok": 15.0,
+      "context_length": 1048576
     },
     {
       "id": "openai/gpt-5.6",
@@ -118,25 +118,25 @@
     },
     {
       "id": "google/gemini-3.6-flash",
-      "name": "gemini-3.6-flash",
+      "name": "Google: Gemini 3.6 Flash",
       "provider": "Google",
       "arena_rating": 1485,
       "arena_rank": 12,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 1.5,
+      "price_output_per_mtok": 7.5,
+      "context_length": 1048576
     },
     {
       "id": "openai/gpt-5.5",
-      "name": "gpt-5.5",
+      "name": "OpenAI: GPT-5.5",
       "provider": "OpenAI",
       "arena_rating": 1476,
       "arena_rank": 16,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 5.0,
+      "price_output_per_mtok": 30.0,
+      "context_length": 1050000
     },
     {
       "id": "openai/gpt-5.2-chat-latest",
@@ -151,36 +151,36 @@
     },
     {
       "id": "qwen/qwen3.7-max",
-      "name": "qwen3.7-max",
+      "name": "Qwen: Qwen3.7 Max",
       "provider": "Qwen",
       "arena_rating": 1475,
       "arena_rank": 19,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 1.475,
+      "price_output_per_mtok": 4.425,
+      "context_length": 1000000
     },
     {
       "id": "google/gemini-3.5-flash",
-      "name": "gemini-3.5-flash",
+      "name": "Google: Gemini 3.5 Flash",
       "provider": "Google",
       "arena_rating": 1474,
       "arena_rank": 21,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 1.5,
+      "price_output_per_mtok": 9.0,
+      "context_length": 1048576
     },
     {
       "id": "anthropic/claude-opus-4.8",
-      "name": "claude-opus-4.8",
+      "name": "Anthropic: Claude Opus 4.8",
       "provider": "Anthropic",
       "arena_rating": 1473,
       "arena_rank": 22,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 5.0,
+      "price_output_per_mtok": 25.0,
+      "context_length": 1000000
     },
     {
       "id": "openai/gpt-5.5-instant",
@@ -195,7 +195,7 @@
     },
     {
       "id": "anthropic/claude-sonnet-4.6",
-      "name": "claude-sonnet-4.6",
+      "name": "Anthropic: Claude Sonnet 4.6",
       "provider": "Anthropic",
       "arena_rating": 1473,
       "arena_rank": 27,
@@ -239,7 +239,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.5",
-      "name": "claude-opus-4.5",
+      "name": "Anthropic: Claude Opus 4.5",
       "provider": "Anthropic",
       "arena_rating": 1469,
       "arena_rank": 31,
@@ -261,36 +261,36 @@
     },
     {
       "id": "x-ai/grok-4.5",
-      "name": "grok-4.5",
+      "name": "xAI: Grok 4.5",
       "provider": "xAI",
       "arena_rating": 1468,
       "arena_rank": 33,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 2.0,
+      "price_output_per_mtok": 6.0,
+      "context_length": 500000
     },
     {
       "id": "xiaomi/mimo-v2.5-pro",
-      "name": "mimo-v2.5-pro",
+      "name": "Xiaomi: MiMo-V2.5-Pro",
       "provider": "xiaomi",
       "arena_rating": 1467,
       "arena_rank": 34,
       "swe_bench_verified": null,
-      "price_input_per_mtok": 1.0,
-      "price_output_per_mtok": 3.0,
-      "context_length": 1048576
+      "price_input_per_mtok": 0.435,
+      "price_output_per_mtok": 0.87,
+      "context_length": 1050000
     },
     {
       "id": "openai/gpt-5.4",
-      "name": "gpt-5.4",
+      "name": "OpenAI: GPT-5.4",
       "provider": "OpenAI",
       "arena_rating": 1466,
       "arena_rank": 35,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 2.5,
+      "price_output_per_mtok": 15.0,
+      "context_length": 1050000
     },
     {
       "id": "qwen/qwen3.5-max",
@@ -305,25 +305,25 @@
     },
     {
       "id": "anthropic/claude-sonnet-5",
-      "name": "claude-sonnet-5",
+      "name": "Anthropic: Claude Sonnet 5",
       "provider": "Anthropic",
       "arena_rating": 1461,
       "arena_rank": 38,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 2.0,
+      "price_output_per_mtok": 10.0,
+      "context_length": 1000000
     },
     {
       "id": "moonshotai/kimi-k2.6",
-      "name": "kimi-k2.6",
+      "name": "MoonshotAI: Kimi K2.6",
       "provider": "Moonshot AI",
       "arena_rating": 1461,
       "arena_rank": 39,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 0.684,
+      "price_output_per_mtok": 3.42,
+      "context_length": 262144
     },
     {
       "id": "qwen/qwen3.6-max",
@@ -338,14 +338,14 @@
     },
     {
       "id": "qwen/qwen3.7-plus",
-      "name": "qwen3.7-plus",
+      "name": "Qwen: Qwen3.7 Plus",
       "provider": "Qwen",
       "arena_rating": 1460,
       "arena_rank": 41,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 0.32,
+      "price_output_per_mtok": 1.28,
+      "context_length": 1000000
     },
     {
       "id": "x-ai/grok-4.1",
@@ -360,14 +360,14 @@
     },
     {
       "id": "google/gemini-3.5-flash-lite",
-      "name": "gemini-3.5-flash-lite",
+      "name": "Google: Gemini 3.5 Flash Lite",
       "provider": "Google",
       "arena_rating": 1459,
       "arena_rank": 43,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 0.3,
+      "price_output_per_mtok": 2.5,
+      "context_length": 1048576
     },
     {
       "id": "google/gemini-3-flash",
@@ -404,18 +404,18 @@
     },
     {
       "id": "deepseek/deepseek-v4-pro",
-      "name": "deepseek-v4-pro",
+      "name": "DeepSeek: DeepSeek V4 Pro",
       "provider": "DeepSeek",
       "arena_rating": 1455,
       "arena_rank": 49,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 0.435,
+      "price_output_per_mtok": 0.87,
+      "context_length": 1048576
     },
     {
       "id": "anthropic/claude-sonnet-4.5",
-      "name": "claude-sonnet-4.5",
+      "name": "Anthropic: Claude Sonnet 4.5",
       "provider": "Anthropic",
       "arena_rating": 1455,
       "arena_rank": 50,
@@ -437,25 +437,25 @@
     },
     {
       "id": "moonshotai/kimi-k2.5",
-      "name": "kimi-k2.5",
+      "name": "MoonshotAI: Kimi K2.5",
       "provider": "Moonshot AI",
       "arena_rating": 1450,
       "arena_rank": 53,
       "swe_bench_verified": 0.708,
-      "price_input_per_mtok": 0.6,
-      "price_output_per_mtok": 3.0,
+      "price_input_per_mtok": 0.57,
+      "price_output_per_mtok": 2.85,
       "context_length": 262144
     },
     {
       "id": "openai/gpt-5.4-mini",
-      "name": "gpt-5.4-mini",
+      "name": "OpenAI: GPT-5.4 Mini",
       "provider": "OpenAI",
       "arena_rating": 1449,
       "arena_rank": 54,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 0.75,
+      "price_output_per_mtok": 4.5,
+      "context_length": 400000
     },
     {
       "id": "baidu/ernie-5.0-preview",
@@ -492,7 +492,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.1",
-      "name": "claude-opus-4.1",
+      "name": "Anthropic: Claude Opus 4.1",
       "provider": "Anthropic",
       "arena_rating": 1447,
       "arena_rank": 59,
@@ -514,7 +514,7 @@
     },
     {
       "id": "google/gemini-2.5-pro",
-      "name": "gemini-2.5-pro",
+      "name": "Google: Gemini 2.5 Pro",
       "provider": "Google",
       "arena_rating": 1446,
       "arena_rank": 61,
@@ -536,18 +536,18 @@
     },
     {
       "id": "minimax/minimax-m3",
-      "name": "minimax-m3",
+      "name": "MiniMax: MiniMax M3",
       "provider": "MiniMax",
       "arena_rating": 1444,
       "arena_rank": 64,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 0.3,
+      "price_output_per_mtok": 1.2,
+      "context_length": 1048576
     },
     {
       "id": "qwen/qwen3.6-plus",
-      "name": "qwen3.6-plus",
+      "name": "Qwen: Qwen3.6 Plus",
       "provider": "Qwen",
       "arena_rating": 1444,
       "arena_rank": 65,
@@ -580,51 +580,51 @@
     },
     {
       "id": "x-ai/grok-4.3",
-      "name": "grok-4.3",
+      "name": "xAI: Grok 4.3",
       "provider": "xAI",
       "arena_rating": 1442,
       "arena_rank": 69,
       "swe_bench_verified": null,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 1.25,
+      "price_output_per_mtok": 2.5,
+      "context_length": 1000000
     },
     {
       "id": "openai/gpt-5.1",
-      "name": "gpt-5.1",
+      "name": "OpenAI: GPT-5.1",
       "provider": "OpenAI",
       "arena_rating": 1439,
       "arena_rank": 71,
       "swe_bench_verified": 0.66,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 1.25,
+      "price_output_per_mtok": 10.0,
+      "context_length": 400000
     },
     {
       "id": "openai/gpt-5.2",
-      "name": "gpt-5.2",
+      "name": "OpenAI: GPT-5.2",
       "provider": "OpenAI",
       "arena_rating": 1434,
       "arena_rank": 78,
       "swe_bench_verified": 0.718,
       "price_input_per_mtok": 1.75,
       "price_output_per_mtok": 14.0,
-      "context_length": 272000
+      "context_length": 400000
     },
     {
       "id": "openai/gpt-5",
-      "name": "gpt-5",
+      "name": "OpenAI: GPT-5",
       "provider": "OpenAI",
       "arena_rating": 1434,
       "arena_rank": 79,
       "swe_bench_verified": 0.718,
       "price_input_per_mtok": 1.25,
       "price_output_per_mtok": 10.0,
-      "context_length": 272000
+      "context_length": 400000
     },
     {
       "id": "google/gemini-3.1-flash-lite-preview",
-      "name": "gemini-3.1-flash-lite-preview",
+      "name": "Google: Gemini 3.1 Flash Lite Preview",
       "provider": "Google",
       "arena_rating": 1432,
       "arena_rank": 81,
@@ -635,7 +635,7 @@
     },
     {
       "id": "openai/gpt-5-chat",
-      "name": "gpt-5-chat",
+      "name": "OpenAI: GPT-5 Chat",
       "provider": "OpenAI",
       "arena_rating": 1427,
       "arena_rank": 89,
@@ -646,12 +646,12 @@
     },
     {
       "id": "deepseek/deepseek-v3.2",
-      "name": "deepseek-v3.2",
+      "name": "DeepSeek: DeepSeek V3.2",
       "provider": "DeepSeek",
       "arena_rating": 1425,
       "arena_rank": 92,
       "swe_bench_verified": 0.7,
-      "price_input_per_mtok": 0.28,
+      "price_input_per_mtok": 0.269,
       "price_output_per_mtok": 0.4,
       "context_length": 163840
     },
@@ -673,13 +673,13 @@
       "arena_rating": null,
       "arena_rank": null,
       "swe_bench_verified": 0.774,
-      "price_input_per_mtok": 2.0,
-      "price_output_per_mtok": 12.0,
-      "context_length": 1048576
+      "price_input_per_mtok": null,
+      "price_output_per_mtok": null,
+      "context_length": null
     },
     {
       "id": "anthropic/claude-sonnet-4",
-      "name": "claude-sonnet-4",
+      "name": "Anthropic: Claude Sonnet 4",
       "provider": "Anthropic",
       "arena_rating": null,
       "arena_rank": null,
@@ -690,7 +690,7 @@
     },
     {
       "id": "google/gemini-3-flash-preview",
-      "name": "gemini-3-flash-preview",
+      "name": "Google: Gemini 3 Flash Preview",
       "provider": "Google",
       "arena_rating": null,
       "arena_rank": null,
@@ -701,18 +701,18 @@
     },
     {
       "id": "minimax/minimax-m2.5",
-      "name": "minimax-m2.5",
+      "name": "MiniMax: MiniMax M2.5",
       "provider": "MiniMax",
       "arena_rating": null,
       "arena_rank": null,
       "swe_bench_verified": 0.758,
-      "price_input_per_mtok": 0.3,
-      "price_output_per_mtok": 1.1,
-      "context_length": 196608
+      "price_input_per_mtok": 0.15,
+      "price_output_per_mtok": 0.9,
+      "context_length": 204800
     },
     {
       "id": "anthropic/claude-opus-4",
-      "name": "claude-opus-4",
+      "name": "Anthropic: Claude Opus 4",
       "provider": "Anthropic",
       "arena_rating": null,
       "arena_rank": null,
@@ -723,25 +723,25 @@
     },
     {
       "id": "openai/gpt-5.2-codex",
-      "name": "gpt-5.2-codex",
+      "name": "OpenAI: GPT-5.2-Codex",
       "provider": "OpenAI",
       "arena_rating": null,
       "arena_rank": null,
       "swe_bench_verified": 0.728,
       "price_input_per_mtok": 1.75,
       "price_output_per_mtok": 14.0,
-      "context_length": 272000
+      "context_length": 400000
     },
     {
       "id": "moonshotai/kimi-k2",
-      "name": "kimi-k2",
+      "name": "MoonshotAI: Kimi K2 0711",
       "provider": "Moonshot AI",
       "arena_rating": null,
       "arena_rank": null,
       "swe_bench_verified": 0.712,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 0.57,
+      "price_output_per_mtok": 2.3,
+      "context_length": 131072
     },
     {
       "id": "anthropic/claude-3.7-sonnet",
@@ -750,13 +750,13 @@
       "arena_rating": null,
       "arena_rank": null,
       "swe_bench_verified": 0.704,
-      "price_input_per_mtok": 3.0,
-      "price_output_per_mtok": 15.0,
-      "context_length": 200000
+      "price_input_per_mtok": null,
+      "price_output_per_mtok": null,
+      "context_length": null
     },
     {
       "id": "anthropic/claude-haiku-4.5",
-      "name": "claude-haiku-4.5",
+      "name": "Anthropic: Claude Haiku 4.5",
       "provider": "Anthropic",
       "arena_rating": null,
       "arena_rank": null,
@@ -767,25 +767,25 @@
     },
     {
       "id": "openai/gpt-5.1-codex",
-      "name": "gpt-5.1-codex",
+      "name": "OpenAI: GPT-5.1-Codex",
       "provider": "OpenAI",
       "arena_rating": null,
       "arena_rank": null,
       "swe_bench_verified": 0.66,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 1.25,
+      "price_output_per_mtok": 10.0,
+      "context_length": 400000
     },
     {
       "id": "openai/o4-mini",
-      "name": "o4-mini",
+      "name": "OpenAI: o4 Mini",
       "provider": "OpenAI",
       "arena_rating": null,
       "arena_rank": null,
       "swe_bench_verified": 0.646,
-      "price_input_per_mtok": null,
-      "price_output_per_mtok": null,
-      "context_length": null
+      "price_input_per_mtok": 1.1,
+      "price_output_per_mtok": 4.4,
+      "context_length": 200000
     }
   ]
 }
