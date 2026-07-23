@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-22T19:53:01Z",
+  "generated_at": "2026-07-23T03:20:15Z",
   "sources": {
     "arena": {
       "updated_at": "2026-07-22",
@@ -11,7 +11,7 @@
       "ok": true
     },
     "openrouter": {
-      "updated_at": "2026-07-22",
+      "updated_at": "2026-07-23",
       "ok": true,
       "via": "openrouter"
     }
